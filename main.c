@@ -1,5 +1,3 @@
-// AQDAS - A simple 4x4x4 Tic Tac Toe game using raylib
-
 #include "raylib.h"
 #include "raymath.h"
 #include <stdlib.h>
@@ -35,9 +33,6 @@ void ResetBoard(void)
     currentPlayer = X_PIECE;
     winner = EMPTY;
 }
-
-// ANUSHKA: Check for a win condition in the 4x4x4 grid
-
 int CheckWin(void)
 {
 
@@ -101,8 +96,6 @@ int CheckWin(void)
     return EMPTY;
 }
 
-// ANUSHREE: Bot makes a move based on difficulty
-
 void BotMove(BotDifficulty diff)
 {
     int bx=-1, by=-1, bz=-1;
@@ -140,8 +133,6 @@ PLACE:
     board[bx][by][bz] = currentPlayer;
     currentPlayer = (currentPlayer==X_PIECE)?O_PIECE:X_PIECE;
 }
-
-// ARPIT: Main game loop and rendering
 
 int main(void)
 {
@@ -222,7 +213,6 @@ int main(void)
 
             cam.target = Vector3Add(cam.position, forward);
 
-// APURV: Ray casting to detect hovered cube
             Ray ray = GetMouseRay((Vector2){GetScreenWidth()/2, GetScreenHeight()/2}, cam);
 
             BeginMode3D(cam);
@@ -309,3 +299,4 @@ int main(void)
     CloseWindow();
     return 0;
 }
+
