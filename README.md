@@ -2,7 +2,7 @@
 
 A fully interactive **3D Tic Tac Toe game** built in **C using Raylib**, featuring a 4×4×4 grid, first-person camera controls, multiple game modes, and AI bots with adjustable difficulty.
 
-This project explores **3D interaction, ray-based selection, game state management, and AI logic** in a low-level graphics environment.
+This project explores **3D interaction, ray-based selection, game state management in a low-level graphics environment.
 
 ---
 
@@ -27,7 +27,7 @@ A player wins if **4 identical pieces** align:
 - **Player vs Bot**
 - **Bot vs Bot** (visible, slowed gameplay)
 
-### Bot AI
+### Bot Algorithm
 Three difficulty levels:
 - **Easy**: Random valid moves
 - **Medium**: Win → Block → Random
